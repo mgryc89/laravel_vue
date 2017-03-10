@@ -1,7 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 // import Router from './routes.js';
 
+Vue.use(VueAxios, axios);
 
 var glowny = Vue.component('glowny', require('./components/glowny.vue'));
 var Bar = Vue.component('example', require('./components/Example.vue'));
