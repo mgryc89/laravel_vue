@@ -8,11 +8,10 @@
 
 
 	<div id="mojapp" class="container">
-		  <h1>Hello App! asd</h1>
 		<p>
 	    	<router-link to="/vue">Glowny</router-link>
-	    	<router-link to="/vue/bar">Bar</router-link>
-	    	<router-link to="/vue/mojcomponent/44">Foo</router-link>
+	    	<router-link to="/vue/bar">Example</router-link>
+	    	<router-link to="/vue/mojcomponent/44">mojComponent</router-link>
 	  	</p>
 
 		<router-view></router-view>

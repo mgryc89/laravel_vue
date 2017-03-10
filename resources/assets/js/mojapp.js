@@ -6,6 +6,7 @@ import VueRouter from 'vue-router';
 var glowny = Vue.component('glowny', require('./components/glowny.vue'));
 var Bar = Vue.component('example', require('./components/Example.vue'));
 var mojcomponent = Vue.component('mojcomponent', require('./components/mojcomponent.vue'));
+var dalszyComponent = Vue.component('dalszyComponent', require('./components/dalszyComponent.vue'));
 
 
 // routes

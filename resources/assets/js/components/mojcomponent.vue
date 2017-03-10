@@ -1,6 +1,11 @@
 <template>
 	<div class="container">
-		mojcomponent
+
+		id: {{ $route.params.id }} mojcomponent
+		<p>{{a}}</p>
+		<p>{{dalszy}}</p>
+		<dalszyComponent @poprzedni="przy"></dalszyComponent>
+
 	</div>
 </template>
 
@@ -18,12 +23,12 @@ export default {
 			zawartosc: '',
 			w: 1,
 			poe: '',
-			a: 'aaaaaaaaaa'
+			a: 'aaaaaaaaaa',
+			dalszy: 'z bliska'
 		}
 	},
 	mounted() {
 		
-		console.log("asdasdsdas");	
 		console.log("asdasdsdas");	
 		this.noweA();
 		
@@ -41,7 +46,12 @@ export default {
 		},
 		noweA() {
 			this.a = 'bbbbbbbbbb';
+		},
+		przy($parametr) {
+			console.log('dziala ' + $parametr);
+			this.a = 'cccc';
 		}
+
 	},
 
 	computed: {

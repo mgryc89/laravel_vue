@@ -938,7 +938,7 @@ module.exports = g;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(0);
-var normalizeHeaderName = __webpack_require__(39);
+var normalizeHeaderName = __webpack_require__(38);
 
 var PROTECTION_PREFIX = /^\)\]\}',?\n/;
 var DEFAULT_CONTENT_TYPE = {
@@ -1043,6 +1043,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     data: function data() {
@@ -1074,7 +1076,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -11351,7 +11353,7 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_vm._v("\n   example\n")])
+  }, [_vm._v("\n\n   example\n   "), _c('glowny')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -20004,12 +20006,12 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(0);
-var settle = __webpack_require__(31);
-var buildURL = __webpack_require__(34);
-var parseHeaders = __webpack_require__(40);
-var isURLSameOrigin = __webpack_require__(38);
+var settle = __webpack_require__(30);
+var buildURL = __webpack_require__(33);
+var parseHeaders = __webpack_require__(39);
+var isURLSameOrigin = __webpack_require__(37);
 var createError = __webpack_require__(18);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(33);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(32);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -20105,7 +20107,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(36);
+      var cookies = __webpack_require__(35);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -20226,7 +20228,7 @@ module.exports = function isCancel(value) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(30);
+var enhanceError = __webpack_require__(29);
 
 /**
  * Create an Error with the specified message, config, error code, and response.
@@ -20262,8 +20264,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 20 */,
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -20273,7 +20274,7 @@ module.exports = function bind(fn, thisArg) {
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(43);
+__webpack_require__(42);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20298,20 +20299,20 @@ var app = new Vue({
 });
 
 /***/ }),
-/* 22 */,
-/* 23 */
+/* 21 */,
+/* 22 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(25);
+module.exports = __webpack_require__(24);
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20319,7 +20320,7 @@ module.exports = __webpack_require__(25);
 
 var utils = __webpack_require__(0);
 var bind = __webpack_require__(19);
-var Axios = __webpack_require__(27);
+var Axios = __webpack_require__(26);
 var defaults = __webpack_require__(6);
 
 /**
@@ -20354,14 +20355,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(16);
-axios.CancelToken = __webpack_require__(26);
+axios.CancelToken = __webpack_require__(25);
 axios.isCancel = __webpack_require__(17);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(41);
+axios.spread = __webpack_require__(40);
 
 module.exports = axios;
 
@@ -20370,7 +20371,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20434,7 +20435,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20442,10 +20443,10 @@ module.exports = CancelToken;
 
 var defaults = __webpack_require__(6);
 var utils = __webpack_require__(0);
-var InterceptorManager = __webpack_require__(28);
-var dispatchRequest = __webpack_require__(29);
-var isAbsoluteURL = __webpack_require__(37);
-var combineURLs = __webpack_require__(35);
+var InterceptorManager = __webpack_require__(27);
+var dispatchRequest = __webpack_require__(28);
+var isAbsoluteURL = __webpack_require__(36);
+var combineURLs = __webpack_require__(34);
 
 /**
  * Create a new instance of Axios
@@ -20526,7 +20527,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20585,14 +20586,14 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(0);
-var transformData = __webpack_require__(32);
+var transformData = __webpack_require__(31);
 var isCancel = __webpack_require__(17);
 var defaults = __webpack_require__(6);
 
@@ -20671,7 +20672,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20697,7 +20698,7 @@ module.exports = function enhanceError(error, config, code, response) {
 
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20729,7 +20730,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20756,7 +20757,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20799,7 +20800,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20874,7 +20875,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20893,7 +20894,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20953,7 +20954,7 @@ module.exports = (
 
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20974,7 +20975,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21049,7 +21050,7 @@ module.exports = (
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21068,7 +21069,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21112,7 +21113,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21146,12 +21147,12 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 42 */,
-/* 43 */
+/* 41 */,
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {
-window._ = __webpack_require__(46);
+window._ = __webpack_require__(45);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -21161,7 +21162,7 @@ window._ = __webpack_require__(46);
 
 window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(9);
 
-__webpack_require__(44);
+__webpack_require__(43);
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
@@ -21177,7 +21178,7 @@ window.Vue = __webpack_require__(14);
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(24);
+window.axios = __webpack_require__(23);
 
 window.axios.defaults.headers.common = {
   // 'X-CSRF-TOKEN': window.Laravel.csrfToken,
@@ -21199,7 +21200,7 @@ window.axios.defaults.headers.common = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/*!
@@ -23583,8 +23584,8 @@ if (typeof jQuery === 'undefined') {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ }),
-/* 45 */,
-/* 46 */
+/* 44 */,
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -40676,6 +40677,7 @@ if (typeof jQuery === 'undefined') {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5), __webpack_require__(52)(module)))
 
 /***/ }),
+/* 46 */,
 /* 47 */,
 /* 48 */,
 /* 49 */,
@@ -40712,8 +40714,8 @@ module.exports = function(module) {
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(21);
-module.exports = __webpack_require__(23);
+__webpack_require__(20);
+module.exports = __webpack_require__(22);
 
 
 /***/ })

@@ -1,6 +1,8 @@
 <template>
     <div class="container">
+
        example
+       <glowny></glowny>
     </div>
 </template>
 
