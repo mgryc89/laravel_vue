@@ -16,8 +16,13 @@
     <body>
     <div id="app">
         <example></example>
+
     </div>
 
+    <div id="mojapp">
+        <glowny></glowny>
+    </div>
     <script src="/js/app.js"></script>
+    <script src="/js/mojapp.js"></script>
     </body>
 </html>

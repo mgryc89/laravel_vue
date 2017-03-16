@@ -2,15 +2,15 @@
 	<div class="container">
 
 		id: {{ $route.params.id }} mojcomponent
-		<p>{{a}}</p>
-		<p>{{dalszy}}</p>
+		<p class="menu">{{a}}</p>
+		<p class="menu">{{dalszy}}</p>
 		<dalszyComponent @poprzedni="przy"></dalszyComponent>
 
 	</div>
 </template>
 
 <script>
-	
+
 export default {
 
 	data() {

@@ -25,3 +25,6 @@ Route::get('/vue', function () {
 Route::get('/file', function () {
     return view('file');
 });
+
+
+Route::post('frophppost', 'ProbaController@index');
