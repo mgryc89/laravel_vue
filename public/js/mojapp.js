@@ -13276,6 +13276,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
 	data: function data() {
@@ -13774,30 +13783,38 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "container"
   }, [_c('p', {
     staticClass: "asd"
-  }, [_vm._v(_vm._s(_vm.zmienna))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.duzelitery))]), _vm._v(" "), _vm._l((_vm.items), function(item) {
+  }, [_vm._v(_vm._s(_vm.zmienna))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.duzelitery))]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._l((_vm.items), function(item) {
     return _c('div', [_vm._v("\n\t\t" + _vm._s(_vm._f("czyMati")(item.name)) + " - " + _vm._s(item.wiek) + " "), _c('br')])
   }), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary",
+    staticClass: "btn btn-default",
     on: {
       "click": _vm.wcisnij
     }
   }, [_vm._v("Zmiana")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-success",
+    staticClass: "btn btn-default",
     on: {
       "click": _vm.fromPHP
     }
   }, [_vm._v("get Form Controller")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-success",
+    staticClass: "btn btn-default",
     on: {
       "click": _vm.fromPHPpost
     }
   }, [_vm._v("post api Form Controller")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-success",
+    staticClass: "btn btn-default",
     on: {
       "click": _vm.fromWebPost
     }
   }, [_vm._v("post web Form Controller")])], 2)
-},staticRenderFns: []}
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pierwszy"
+  }, [_c('div', {
+    staticClass: "drugi"
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi ratione molestias quidem officiis non doloribus quae magni voluptatem mollitia reprehenderit porro, illum facere dolores, ad ipsam inventore dolore distinctio!")])]), _vm._v(" "), _c('div', {
+    staticClass: "trzeci"
+  }, [_vm._v("\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Cum temporibus dicta est cupiditate animi iusto repellendus, vel velit eveniet optio voluptates laboriosam, earum illo! Numquam laboriosam, itaque reprehenderit aperiam soluta.\n\t\t")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

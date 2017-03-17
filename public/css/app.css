@@ -8316,3 +8316,11 @@ button.close {
     display: none !important;
   }
 }
+
+.pierwszy .drugi p {
+  color: grey;
+}
+
+.pierwszy .trzeci {
+  color: darkgray;
+}

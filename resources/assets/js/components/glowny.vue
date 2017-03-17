@@ -5,17 +5,26 @@
 		<p class="asd">{{ zmienna }}</p>
 		<p>{{ duzelitery }}</p>
 
+		<div class="pierwszy">
+			<div class="drugi">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi ratione molestias quidem officiis non doloribus quae magni voluptatem mollitia reprehenderit porro, illum facere dolores, ad ipsam inventore dolore distinctio!</p>
+
+			</div>
+			<div class="trzeci">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum temporibus dicta est cupiditate animi iusto repellendus, vel velit eveniet optio voluptates laboriosam, earum illo! Numquam laboriosam, itaque reprehenderit aperiam soluta.
+			</div>
+		</div>
 		<div v-for="item in items">
 			{{ item.name | czyMati}} - {{ item.wiek }} <br>
 		</div >
 
-		<button class="btn btn-primary" @click="wcisnij">Zmiana</button>
+		<button class="btn btn-default" @click="wcisnij">Zmiana</button>
 
-		<button class="btn btn-success" @click="fromPHP">get Form Controller</button>
+		<button class="btn btn-default" @click="fromPHP">get Form Controller</button>
 
-		<button class="btn btn-success" @click="fromPHPpost">post api Form Controller</button>
+		<button class="btn btn-default" @click="fromPHPpost">post api Form Controller</button>
 
-		<button class="btn btn-success" @click="fromWebPost">post web Form Controller</button>
+		<button class="btn btn-default" @click="fromWebPost">post web Form Controller</button>
 	</div>
 </template>
 
