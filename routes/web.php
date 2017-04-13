@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('event', 'ProbaController@event');
 Route::get('/vue/{path}', function () {
     return view('vue');
 })->where( 'path', '([A-z\d-\/_.]+)?' );
